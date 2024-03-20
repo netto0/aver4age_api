@@ -1,0 +1,37 @@
+usuario
+	nome	
+	curso
+    periodo
+    materias {
+        materia1 {
+            nome,
+            semestre,
+            ava1,
+            ava2,
+            ava3,
+            ava4,
+            pim,
+            prova
+        }
+        materia2 {
+            nome,
+            semestre,
+            ava1,
+            ava2,
+            ava3,
+            ava4,
+            pim,
+            prova
+        }
+        materia3 {
+            nome,
+            semestre,
+            ava1,
+            ava2,
+            ava3,
+            ava4,
+            pim,
+            prova
+        }
+    }
+	
