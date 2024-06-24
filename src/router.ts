@@ -19,4 +19,4 @@ export default router
   .get("/subject", getSubjects)
   .get("/subject/:id", getSubjectByID)
   .delete("/subject/:id", deleteSubject)
-  .patch("/subject/:id", subjectCreateValidation(), validate, updateSubject);
+  .patch("/subject/:id", validate, updateSubject);

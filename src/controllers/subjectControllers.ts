@@ -7,7 +7,7 @@ export async function createSubject(req: Request, res: Response) {
     const subject = await SubjectModel.create(data);
     return res.status(201).json(subject);
   } catch (e: any) {
-    console.log("Erro no sistema ", e);
+    console.log("Erro no sistema ", e); 
   }
 }
 

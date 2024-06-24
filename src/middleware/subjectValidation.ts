@@ -14,12 +14,9 @@ export const subjectCreateValidation = () => {
       .withMessage("Informe o semestre da matéria.")
       .isNumeric()
       .withMessage("O semestre precisa ser um número."),
-    body("avaQtt")
-      .notEmpty()
-      .withMessage("Preencha a quantidade de aulas."),
-    body("avaGrades")
-      .isObject()
-      .withMessage("As notas precisam estar em formato de objeto."),
+    body("avaGrade")
+      .exists()
+      .withMessage("Informe a nota do ava."),
     body("examGrade")
       .exists()
       .withMessage("O campo 'examGrade' precisa ser incluído no objeto."),
