@@ -8,6 +8,7 @@ const subjectSchema = new Schema(
     pimGrade: { type: Number },
     examGrade: { type: Number },
     retakeGrade: { type: Number },
+    avg: { type: Number },
   },
   { timestamps: true }
 );
