@@ -23,6 +23,7 @@ export async function getSubjects(req: Request, res: Response) {
 export async function getSubjectByID(req: Request, res: Response) {
   try {
     const id = req.params.id;
+    
     const subject = await SubjectModel.findById(id);
 
     if (!subject) {
